@@ -9,17 +9,30 @@ if joke == "no":
 while joke == "yes":
     print("Great, Let's Play")
     question = input("Do you want to hear a joke about robbers, tanks, or pencils? ")
-    if question == "robbers":
+
+if question == "robbers":
+      robbers()
+
+elif question == "tanks":
+      tanks()
+
+elif question == "pencils":
+      pencils()
+
+def robbers():
+    # if question == "robbers":
         input("Knock Knock ")
         input("Calder")
         print("Calder police - I've been robbed!")
         joke = input("Do you want to hear another joke or are you finished? ")
-    elif question == "tanks":
+def tanks():
+    # elif question == "tanks":
         input("Knock Knock ")
         input("Tank ")
         input("You are welcome! ")
         joke = input("Do you want to hear another joke or are you finished? ")
-    elif question == "pencils":
+def pencils():
+    # elif question == "pencils":
         input("Knock Knock ")
         input("Broken pencil ")
         input("Nevermind, it's pointless! ")

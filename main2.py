@@ -1,48 +1,30 @@
-
-
-# make this performance task ready for submission
-# To give the user a fun experience hearing knock knock jokes
-jokes = ["robbers", "tanks", "pencils"]
 joke = input("Do you want to hear a joke? ")
 if joke == "no":
     print("Okay suit yourself!")
-while joke == "yes".lower():
+while joke == "yes":
     print("Great, Let's Play")
     question = input("Do you want to hear a joke about robbers, tanks, or pencils? ")
-    print(question)
-    if question == "tanks":
-        input("Knock Knock ")
-        input("Tank ")
-        print("You are welcome! ")
-    elif question == "robbers":
+    if question == "robbers":
         input("Knock Knock ")
         input("Calder")
         print("Calder police - I've been robbed!")
-
-def pencils():
-    input("Knock Knock ")
-    input("Broken pencil ")
-    print("Nevermind, it's pointless! ")
-
-
-    if question == "robbers":
-        robbers()
         joke = input("Do you want to hear another joke or are you finished? ")
     elif question == "tanks":
         input("Knock Knock ")
         input("Tank ")
-        print("You are welcome! ")
+        input("You are welcome! ")
         joke = input("Do you want to hear another joke or are you finished? ")
     elif question == "pencils":
-        pencils()
+        input("Knock Knock ")
+        input("Broken pencil ")
+        input("Nevermind, it's pointless! ")
         joke = input("Do you want to hear another joke or are you finished? ")
-
 if joke == "finished":
     rate = int(input("Please rate our game 1-10! "))
     final_score = int(rate * 10)
     print(str(final_score) + " percent satisfaction rate")
     friend = input("Would you recommend this game to a friend? ")
-    
+
     if friend == "yes" or friend == "maybe":
         print("Thanks, we appreciate it. ")
     else:
